@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Тендеры ГНБ — GNB Line</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f3f5f8; --card: #ffffff; --text: #16202e; --muted: #667085; --soft: #98a2b3; --line: #e4e8ee;
+  --brand: #0f2a47; --brand2: #163a61; --accent: #f28c1b; --link: #0b63c5;
+  --good: #12935a; --good-bg: #e6f6ee; --mid: #b26b00; --mid-bg: #fff4e0; --bad: #d03b2f; --bad-bg: #fdecea;
+  --cost: #c7d0dc; --tax: #f2c48d; --chip: #f0f3f7; --shadow: 0 1px 2px rgba(16,24,40,.05), 0 4px 16px rgba(16,24,40,.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1319; --card: #171e27; --text: #e8edf3; --muted: #a3adbb; --soft: #6f7b8b; --line: #263140;
+          --brand: #0b1a2c; --brand2: #13263d; --link: #6fb2ff;
+          --good: #3fd08a; --good-bg: #123526; --mid: #f3b456; --mid-bg: #3a2c12; --bad: #ff7468; --bad-bg: #3d1a17;
+          --cost: #3a4757; --tax: #7a5a31; --chip: #212b37; --shadow: none; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 Manrope, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+button, select, input { font: inherit; color: inherit; }
+a { color: var(--link); }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+/* Шапка */
+.hero { background: linear-gradient(135deg, var(--brand), var(--brand2)); color: #fff; padding: 22px 0 64px; }
+.hero .row { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo .mark { width: 42px; height: 42px; border-radius: 12px; background: var(--accent); display: grid; place-items: center; font-weight: 800; font-size: 15px; color: #fff; }
+.logo h1 { margin: 0; font-size: 21px; font-weight: 800; letter-spacing: -.01em; }
+.logo .sub { color: #b7c6d8; font-size: 13px; }
+.btn { border: 0; border-radius: 10px; padding: 10px 16px; font-weight: 700; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
+.btn-accent { background: var(--accent); color: #fff; }
+.btn-accent:hover { filter: brightness(1.06); }
+.btn-ghost { background: transparent; border: 1px solid var(--line); color: var(--text); }
+
+/* Итоги */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: -44px; }
+.kpi { background: var(--card); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); border: 1px solid var(--line); }
+.kpi span { font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+.kpi b { display: block; font-size: 24px; font-weight: 800; margin-top: 2px; letter-spacing: -.02em; }
+.kpi b.good { color: var(--good); }
+.kpi small { color: var(--soft); font-size: 12px; }
+
+/* Фильтры */
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin-top: 14px; box-shadow: var(--shadow); }
+.quick { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.pill { border: 1px solid var(--line); background: var(--chip); border-radius: 999px; padding: 6px 13px; cursor: pointer; font-size: 14px; font-weight: 600; color: var(--text); }
+.pill.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filters { display: grid; grid-template-columns: 2fr 1.3fr 1fr 1fr 1fr 1.3fr; gap: 10px; align-items: end; }
+.filters label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 600; color: var(--muted); }
+input, select { background: var(--bg); border: 1px solid var(--line); border-radius: 9px; padding: 8px 10px; width: 100%; min-width: 0; }
+input:focus, select:focus { outline: 2px solid var(--link); outline-offset: -1px; }
+.toggle { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; margin-top: 12px; cursor: pointer; width: fit-content; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--good); }
+
+.count { color: var(--muted); font-size: 14px; margin: 18px 2px 10px; }
+
+/* Карточка закупки */
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; margin-bottom: 14px; box-shadow: var(--shadow); overflow: hidden; border-left: 5px solid var(--cost); }
+.card.good { border-left-color: var(--good); } .card.mid { border-left-color: var(--accent); } .card.bad { border-left-color: var(--bad); }
+.card-main { display: grid; grid-template-columns: 1fr 230px; gap: 18px; padding: 16px 18px; }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+.tag { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 6px; background: var(--chip); color: var(--muted); }
+.tag.law { background: #e8f0fb; color: #1d5fae; }
+.tag.hot { background: var(--bad-bg); color: var(--bad); }
+.tag.soon { background: var(--mid-bg); color: var(--mid); }
+@media (prefers-color-scheme: dark) { .tag.law { background: #1a2d45; color: #8cc0ff; } }
+.card h2 { font-size: 16.5px; line-height: 1.35; margin: 0 0 8px; font-weight: 700; }
+.card h2 a { color: var(--text); text-decoration: none; }
+.card h2 a:hover { color: var(--link); }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13.5px; color: var(--muted); }
+.meta span { display: inline-flex; gap: 5px; align-items: center; }
+.money { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+.money div { font-size: 12px; color: var(--muted); font-weight: 600; }
+.money b { display: block; font-size: 16px; color: var(--text); font-weight: 700; }
+.bar { display: flex; height: 10px; border-radius: 99px; overflow: hidden; background: var(--chip); margin-top: 12px; }
+.bar i { display: block; height: 100%; }
+.bar .c { background: var(--cost); } .bar .t { background: var(--tax); } .bar .p { background: var(--good); } .bar .l { background: var(--bad); }
+.legend { display: flex; gap: 14px; font-size: 12px; color: var(--muted); margin-top: 6px; flex-wrap: wrap; }
+.legend i { display: inline-block; width: 9px; height: 9px; border-radius: 3px; margin-right: 5px; vertical-align: 0; }
+
+.verdict { border-radius: 14px; padding: 14px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 2px; }
+.verdict.good { background: var(--good-bg); } .verdict.mid { background: var(--mid-bg); } .verdict.bad { background: var(--bad-bg); }
+.verdict .lbl { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.verdict .profit { font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
+.verdict.good .profit { color: var(--good); } .verdict.mid .profit { color: var(--mid); } .verdict.bad .profit { color: var(--bad); }
+.verdict .margin { font-weight: 700; font-size: 14px; }
+.verdict .be { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+.verdict .be b { color: var(--text); }
+
+.tune { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 12px 18px; background: var(--bg); border-top: 1px solid var(--line); }
+.tune label { font-size: 12px; font-weight: 600; color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
+.tune input, .tune select { background: var(--card); }
+.est { color: var(--mid); font-weight: 700; }
+details { border-top: 1px solid var(--line); }
+summary { cursor: pointer; padding: 11px 18px; font-weight: 700; font-size: 14px; color: var(--link); list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: '▸ '; } details[open] summary::before { content: '▾ '; }
+.more { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; padding: 0 18px 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+td { padding: 6px 0; border-bottom: 1px solid var(--line); }
+td:last-child { text-align: right; white-space: nowrap; padding-left: 12px; font-variant-numeric: tabular-nums; }
+tr.plus td { font-weight: 700; }
+tr.total td { font-weight: 800; font-size: 15px; border-bottom: 0; padding-top: 10px; }
+.info h4 { margin: 4px 0 6px; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.info p { margin: 0 0 8px; font-size: 14px; }
+.docs a { display: block; font-size: 14px; padding: 4px 0; text-decoration: none; }
+.docs a:hover { text-decoration: underline; }
+.hint { font-size: 12.5px; color: var(--soft); }
+
+.empty { text-align: center; color: var(--muted); padding: 48px 16px; background: var(--card); border-radius: 16px; border: 1px dashed var(--line); }
+footer { color: var(--soft); font-size: 12.5px; padding: 20px 16px 40px; }
+
+/* Настройки */
+dialog { border: 0; border-radius: 18px; padding: 0; width: min(720px, calc(100% - 24px)); background: var(--card); color: var(--text); box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+dialog::backdrop { background: rgba(10,20,35,.55); }
+.dlg-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.dlg-head h3 { margin: 0; font-size: 18px; }
+.dlg-body { padding: 4px 20px 20px; max-height: 72vh; overflow: auto; }
+.sec { margin-top: 16px; }
+.sec h4 { margin: 0 0 8px; font-size: 14px; display: flex; gap: 8px; align-items: center; }
+.set { display: grid; grid-template-columns: 1fr 150px; gap: 12px; align-items: center; padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.unit { position: relative; }
+.unit input { padding-right: 52px; text-align: right; }
+.unit em { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-style: normal; font-size: 12px; color: var(--soft); pointer-events: none; }
+.note { font-size: 13.5px; color: var(--muted); background: var(--bg); border-radius: 10px; padding: 10px 12px; margin: 14px 0 0; }
+
+@media (max-width: 860px) {
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .filters { grid-template-columns: 1fr 1fr; }
+  .filters label:first-child { grid-column: 1 / -1; }
+  .card-main { grid-template-columns: 1fr; }
+  .tune { grid-template-columns: 1fr 1fr; }
+  .more { grid-template-columns: 1fr; }
+  .set { grid-template-columns: 1fr 120px; }
+}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="wrap row">
+    <div class="logo">
+      <div class="mark">ГНБ</div>
+      <div>
+        <h1>Тендеры на ГНБ и проколы</h1>
+        <div class="sub" id="updated">Загрузка…</div>
+      </div>
+    </div>
+    <button class="btn btn-accent" id="openSettings">⚙ Мои расценки</button>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="kpis" id="kpis"></div>
+
+  <div class="panel">
+    <div class="quick" id="quick">
+      <button class="pill" data-q="all">Вся Россия</button>
+      <button class="pill" data-q="56">Оренбургская обл.</button>
+      <button class="pill" data-q="500">До 500 км</button>
+      <button class="pill" data-q="1000">До 1000 км</button>
+    </div>
+    <div class="filters">
+      <label>Поиск<input id="fQ" placeholder="газ, канализация, Орск…"></label>
+      <label>Регион<select id="fRegion"></select></label>
+      <label>Цена от, ₽<input id="fMin" type="number" min="0" step="50000"></label>
+      <label>Цена до, ₽<input id="fMax" type="number" min="0" step="50000" placeholder="любая"></label>
+      <label>Закон<select id="fLaw"><option value="">Все</option><option>44-ФЗ</option><option>223-ФЗ</option></select></label>
+      <label>Сначала<select id="fSort">
+        <option value="deadline">срочные</option>
+        <option value="profit">с большей прибылью</option>
+        <option value="margin">с большей маржой</option>
+        <option value="price">дорогие</option>
+        <option value="km">ближние</option>
+        <option value="new">новые</option>
+      </select></label>
+    </div>
+    <input id="fKm" type="hidden">
+    <label class="toggle"><input id="fProfit" type="checkbox"> Показывать только прибыльные</label>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+</main>
+
+<footer class="wrap">
+  Данные: ЕИС zakupki.gov.ru через ГосПлан API — закупки по 44-ФЗ и 223-ФЗ, по которым сейчас идёт приём заявок. Обновляется каждые 2 часа.
+  Коммерческие площадки пока не подключены. Расчёт ориентировочный: перед подачей заявки сверьтесь со сметой и техзаданием.
+  Ваши расценки хранятся только в этом браузере.
+</footer>
+
+<dialog id="dlg">
+  <div class="dlg-head"><h3>Мои расценки</h3><button class="btn btn-accent" id="closeSettings">Сохранить</button></div>
+  <div class="dlg-body" id="settingsBody"></div>
+</dialog>
+
+<script>
+// ---------- Регионы: код ЕИС, название, центр (широта, долгота), слово для распознавания ----------
+const REGIONS = {
+  1:['Адыгея',44.61,40.10,'АДЫГ'],2:['Башкортостан',54.74,55.97,'БАШК'],3:['Бурятия',51.83,107.58,'БУРЯТ'],
+  4:['Республика Алтай',51.96,85.96,'РЕСПУБЛИКА АЛТАЙ'],5:['Дагестан',42.98,47.50,'ДАГЕСТ'],6:['Ингушетия',43.17,44.81,'ИНГУШ'],
+  7:['Кабардино-Балкария',43.49,43.62,'КАБАРД'],8:['Калмыкия',46.31,44.27,'КАЛМЫК'],9:['Карачаево-Черкесия',44.23,42.06,'КАРАЧАЕ'],
+  10:['Карелия',61.79,34.36,'КАРЕЛ'],11:['Коми',61.67,50.84,'КОМИ'],12:['Марий Эл',56.63,47.89,'МАРИЙ'],
+  13:['Мордовия',54.19,45.18,'МОРДОВ'],14:['Якутия',62.03,129.73,'САХА'],15:['Северная Осетия',43.02,44.68,'ОСЕТИ'],
+  16:['Татарстан',55.79,49.12,'ТАТАРСТ'],17:['Тыва',51.72,94.44,'ТЫВА'],18:['Удмуртия',56.85,53.20,'УДМУРТ'],
+  19:['Хакасия',53.72,91.44,'ХАКАС'],20:['Чечня',43.32,45.69,'ЧЕЧЕН'],21:['Чувашия',56.15,47.25,'ЧУВАШ'],
+  22:['Алтайский край',53.35,83.78,'АЛТАЙСКИЙ'],23:['Краснодарский край',45.04,38.98,'КРАСНОДАР'],24:['Красноярский край',56.01,92.85,'КРАСНОЯР'],
+  25:['Приморский край',43.12,131.89,'ПРИМОР'],26:['Ставропольский край',45.04,41.97,'СТАВРОП'],27:['Хабаровский край',48.48,135.08,'ХАБАРОВ'],
+  28:['Амурская обл.',50.29,127.53,'АМУР'],29:['Архангельская обл.',64.54,40.54,'АРХАНГ'],30:['Астраханская обл.',46.35,48.04,'АСТРАХ'],
+  31:['Белгородская обл.',50.60,36.59,'БЕЛГОР'],32:['Брянская обл.',53.24,34.36,'БРЯН'],33:['Владимирская обл.',56.13,40.41,'ВЛАДИМИР'],
+  34:['Волгоградская обл.',48.71,44.51,'ВОЛГОГР'],35:['Вологодская обл.',59.22,39.89,'ВОЛОГ'],36:['Воронежская обл.',51.66,39.20,'ВОРОНЕЖ'],
+  37:['Ивановская обл.',57.00,40.97,'ИВАНОВ'],38:['Иркутская обл.',52.29,104.28,'ИРКУТ'],39:['Калининградская обл.',54.71,20.51,'КАЛИНИНГР'],
+  40:['Калужская обл.',54.51,36.26,'КАЛУЖ'],41:['Камчатский край',53.02,158.65,'КАМЧАТ'],42:['Кемеровская обл.',55.35,86.09,'КЕМЕРОВ'],
+  43:['Кировская обл.',58.60,49.66,'КИРОВ'],44:['Костромская обл.',57.77,40.93,'КОСТРОМ'],45:['Курганская обл.',55.44,65.34,'КУРГАН'],
+  46:['Курская обл.',51.73,36.19,'КУРСК'],47:['Ленинградская обл.',59.94,30.31,'ЛЕНИНГРАД'],48:['Липецкая обл.',52.61,39.59,'ЛИПЕЦ'],
+  49:['Магаданская обл.',59.56,150.80,'МАГАДАН'],50:['Московская обл.',55.75,37.62,'МОСКОВСК'],51:['Мурманская обл.',68.97,33.07,'МУРМАН'],
+  52:['Нижегородская обл.',56.33,44.00,'НИЖЕГОР'],53:['Новгородская обл.',58.52,31.27,'НОВГОРОД'],54:['Новосибирская обл.',55.03,82.92,'НОВОСИБ'],
+  55:['Омская обл.',54.99,73.37,'ОМСК'],56:['Оренбургская обл.',51.77,55.10,'ОРЕНБУРГ'],57:['Орловская обл.',52.97,36.06,'ОРЛОВ'],
+  58:['Пензенская обл.',53.20,45.00,'ПЕНЗ'],59:['Пермский край',58.01,56.25,'ПЕРМ'],60:['Псковская обл.',57.82,28.33,'ПСКОВ'],
+  61:['Ростовская обл.',47.22,39.72,'РОСТОВ'],62:['Рязанская обл.',54.63,39.74,'РЯЗАН'],63:['Самарская обл.',53.20,50.15,'САМАР'],
+  64:['Саратовская обл.',51.53,46.03,'САРАТОВ'],65:['Сахалинская обл.',46.96,142.73,'САХАЛИН'],66:['Свердловская обл.',56.84,60.61,'СВЕРДЛОВ'],
+  67:['Смоленская обл.',54.78,32.05,'СМОЛЕН'],68:['Тамбовская обл.',52.72,41.45,'ТАМБОВ'],69:['Тверская обл.',56.86,35.90,'ТВЕР'],
+  70:['Томская обл.',56.48,84.95,'ТОМСК'],71:['Тульская обл.',54.19,37.62,'ТУЛЬСК'],72:['Тюменская обл.',57.15,65.53,'ТЮМЕН'],
+  73:['Ульяновская обл.',54.31,48.40,'УЛЬЯНОВ'],74:['Челябинская обл.',55.16,61.40,'ЧЕЛЯБ'],75:['Забайкальский край',52.03,113.50,'ЗАБАЙК'],
+  76:['Ярославская обл.',57.63,39.87,'ЯРОСЛАВ'],77:['Москва',55.75,37.62,'МОСКВА'],78:['Санкт-Петербург',59.94,30.31,'ПЕТЕРБУРГ'],
+  79:['Еврейская АО',48.79,132.92,'ЕВРЕЙСК'],80:['ДНР',48.00,37.80,'ДОНЕЦК'],81:['ЛНР',48.57,39.33,'ЛУГАНСК'],
+  83:['Ненецкий АО',67.64,53.01,'НЕНЕЦ'],84:['Херсонская обл.',46.17,34.80,'ХЕРСОН'],85:['Запорожская обл.',46.85,35.37,'ЗАПОРОЖ'],
+  86:['ХМАО — Югра',61.00,69.02,'ХАНТЫ'],87:['Чукотка',64.73,177.51,'ЧУКОТ'],89:['ЯНАО',66.53,66.61,'ЯМАЛ'],
+  91:['Крым',44.95,34.10,'КРЫМ'],92:['Севастополь',44.62,33.52,'СЕВАСТОП']
+};
+const HOME = [51.77, 55.10]; // Оренбург
+
+// ---------- Настройки по умолчанию (примерные — пользователь меняет под себя) ----------
+const DEFAULTS = {
+  crewS: 1000, crewM: 1400, crewL: 2200,
+  pipeOurs: 1, pipeS: 150, pipeM: 900, pipeL: 3000,
+  mobil: 15000, perKm: 120, roadFactor: 1.25, farKm: 150, livingPerDay: 6000, metersPerDay: 60,
+  pitCost: 8000, pitsPerJob: 2, docsCost: 10000, otherPct: 5,
+  discount: 15, appGuarPct: 1, freezeRatePct: 16, contrGuarPct: 5, guarRatePct: 4, guarMin: 3000, termDays: 60,
+  etpPct: 1, etpMax: 5000,
+  taxPct: 6, vatPct: 0,
+  estPricePerM: 3500
+};
+const SETTINGS_FORM = [
+  ['Работа бригады за метр (зарплата, топливо, износ, бентонит)', [
+    ['crewS', 'Малый диаметр, до 63 мм', '₽/м'], ['crewM', 'Средний, 63–160 мм', '₽/м'], ['crewL', 'Большой, свыше 160 мм', '₽/м']]],
+  ['Труба', [
+    ['pipeOurs', 'Трубу покупаем мы (1 — да, 0 — даёт заказчик)', ''],
+    ['pipeS', 'Труба до 63 мм', '₽/м'], ['pipeM', 'Труба 63–160 мм', '₽/м'], ['pipeL', 'Труба свыше 160 мм', '₽/м']]],
+  ['Выезд и дорога', [
+    ['mobil', 'Мобилизация техники (погрузка, трал) — на объект', '₽'],
+    ['perKm', 'Дорога за 1 км пути (техника + бригада), туда и обратно считается сам', '₽/км'],
+    ['roadFactor', 'Дорога длиннее прямой линии в … раз', '×'],
+    ['farKm', 'Дальше скольких км нужно жильё и суточные', 'км'],
+    ['livingPerDay', 'Жильё и суточные бригады за день', '₽/день'],
+    ['metersPerDay', 'Сколько метров бурим за день', 'м/день']]],
+  ['Котлованы, колодцы, документы', [
+    ['pitCost', 'Один котлован / приямок (копка, крепление, засыпка)', '₽'],
+    ['pitsPerJob', 'Котлованов на объект по умолчанию', 'шт'],
+    ['docsCost', 'Исполнительная документация, геодезия', '₽'],
+    ['otherPct', 'Непредвиденные расходы', '%']]],
+  ['Торги и обеспечение', [
+    ['discount', 'Ожидаемое снижение цены на торгах', '%'],
+    ['appGuarPct', 'Обеспечение заявки, если закупка дороже 1 млн и размер не указан', '% НМЦК'],
+    ['freezeRatePct', 'Цена «замороженных» денег (обеспечение заявки ~1 месяц)', '% годовых'],
+    ['contrGuarPct', 'Обеспечение контракта, если не указано', '% НМЦК'],
+    ['guarRatePct', 'Комиссия банка за гарантию на контракт', '% годовых'],
+    ['guarMin', 'Минимальная комиссия за банковскую гарантию', '₽'],
+    ['termDays', 'Срок контракта, если не указан', 'дней'],
+    ['etpPct', 'Плата площадке с победителя', '%'],
+    ['etpMax', 'Плата площадке — не больше', '₽']]],
+  ['Налоги', [
+    ['taxPct', 'УСН «доходы»', '%'],
+    ['vatPct', 'НДС, если платите (0, 5, 7 или 22)', '%']]],
+  ['Если метраж в закупке не найден', [
+    ['estPricePerM', 'Оцениваем метраж как НМЦК ÷ эта цена метра', '₽/м']]]
+];
+
+const LS = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+let S = Object.assign({}, DEFAULTS, LS.get('gnb-settings', {}));
+let OV = LS.get('gnb-overrides', {});   // правки по конкретным закупкам: метраж, диаметр, котлованы, снижение
+let DATA = { tenders: [] };
+
+const $ = id => document.getElementById(id);
+const arr = x => x == null ? [] : Array.isArray(x) ? x : [x];
+const rub = n => (n == null || isNaN(n)) ? '—' : Math.round(n).toLocaleString('ru-RU') + ' ₽';
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// ---------- Регион и расстояние ----------
+function regionOf(t) {
+  if (t.regionText) {
+    const up = String(t.regionText).toUpperCase();
+    for (const [code, r] of Object.entries(REGIONS)) if (up.includes(r[3])) return +code;
+  }
+  return t.region;
+}
+function kmFromHome(code) {
+  const r = REGIONS[code];
+  if (!r) return null;
+  const toRad = x => x * Math.PI / 180;
+  const dLat = toRad(r[1] - HOME[0]), dLon = toRad(r[2] - HOME[1]);
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(HOME[0])) * Math.cos(toRad(r[1])) * Math.sin(dLon / 2) ** 2;
+  return 6371 * 2 * Math.asin(Math.sqrt(a));
+}
+
+// ---------- Метраж и диаметр из текста закупки ----------
+function guess(t) {
+  const texts = [t.title, ...arr(t.objects).map(o => o.name)].join(' ; ');
+  let meters = 0;
+  for (const o of arr(t.objects)) {
+    if (o.qty > 0 && /^(м|пог|метр|м\.?\s*п)/i.test(String(o.unit || '').trim())) meters += o.qty;
+  }
+  if (!meters) {
+    const re = /(\d{1,4}(?:[.,]\d+)?)\s*(?:п\.?\s*м\.?|пог\.?\s*м|м\.\s*п|метр\w*|м)(?![мa-zа-яё²³])/gi;
+    let m; while ((m = re.exec(texts))) meters += parseFloat(m[1].replace(',', '.'));
+  }
+  if (!meters) {
+    const km = /протяж\S*\s*(?:до\s*)?(\d+(?:[.,]\d+)?)\s*км/i.exec(texts);
+    if (km) meters = parseFloat(km[1].replace(',', '.')) * 1000;
+  }
+  let dia = 0;
+  // В JS \b не работает с кириллицей, поэтому границу слова проверяем через (?<![а-яёa-z])
+  const reD = /(?:[Ø⌀]|(?<![а-яёa-z])(?:ф|d|д|ду|dn)(?=\s*=?\s*\d)|диаметр[а-яё]*)\s*[=:]?\s*(\d{2,4})(?![\d.,]*\s*(?:м(?![а-яё])|км|шт))|(\d{2,4})\s*мм/gi;
+  let d; while ((d = reD.exec(texts))) { const v = +(d[1] || d[2]); if (v >= 20 && v <= 1600) dia = Math.max(dia, v); }
+  const cls = !dia ? 'M' : dia <= 63 ? 'S' : dia <= 160 ? 'M' : 'L';
+  return { meters: meters > 0 && meters < 20000 ? Math.round(meters) : 0, dia, cls };
+}
+
+// ---------- Расчёт прибыли ----------
+function calc(t, discountOverride) {
+  const o = OV[t.id] || {};
+  const g = guess(t);
+  const cls = o.cls || g.cls;
+  const discount = discountOverride ?? (o.discount ?? S.discount);
+  const price = t.price || 0;
+  const rev = price * (1 - discount / 100);
+  let meters = o.meters ?? g.meters, est = false;
+  if (!meters) { meters = Math.round(price / S.estPricePerM); est = true; }
+
+  const region = regionOf(t);
+  const lineKm = kmFromHome(region);
+  const roadKm = lineKm == null ? 0 : lineKm * S.roadFactor;
+  const crew = meters * S['crew' + cls];
+  const pipe = S.pipeOurs ? meters * S['pipe' + cls] : 0;
+  const pits = (o.pits ?? S.pitsPerJob) * S.pitCost;
+  const travel = S.mobil + 2 * roadKm * S.perKm;
+  const days = Math.ceil(meters / Math.max(1, S.metersPerDay)) + 1;
+  const living = roadKm > S.farKm ? days * S.livingPerDay : 0;
+  const direct = crew + pipe + pits + travel + living + S.docsCost;
+  const other = direct * S.otherPct / 100;
+
+  const is44 = t.law === '44-ФЗ';
+  let appG = +t.appGuaranteeAmount || (t.appGuaranteePart ? price * t.appGuaranteePart / 100 : (is44 && price > 1e6 ? price * S.appGuarPct / 100 : 0));
+  const appCost = appG * S.freezeRatePct / 100 / 12;
+  let contrG = +t.contractGuaranteeAmount || price * (t.contractGuaranteePart ?? S.contrGuarPct) / 100;
+  if (is44 && discount >= 25) contrG *= 1.5; // антидемпинг 44-ФЗ: при снижении от 25% обеспечение в 1,5 раза больше
+  const months = (t.termDays || S.termDays) / 30 + 1;
+  const contrCost = contrG > 0 ? Math.max(S.guarMin, contrG * S.guarRatePct / 100 * months / 12) : 0;
+  const etp = Math.min(rev * S.etpPct / 100, S.etpMax);
+  const vat = rev * S.vatPct / (100 + S.vatPct);
+  const tax = (rev - vat) * S.taxPct / 100;
+
+  const cost = direct + other;
+  const profit = rev - vat - tax - cost - appCost - contrCost - etp;
+  return { discount, rev, meters, est, cls, dia: g.dia, region, roadKm, lineKm, crew, pipe, pits, travel, living, days,
+           docs: S.docsCost, other, appG, appCost, contrG, contrCost, etp, vat, tax, cost, profit,
+           margin: rev > 0 ? profit / rev * 100 : 0 };
+}
+function breakEven(t) {
+  if (calc(t, 0).profit <= 0) return null;
+  let lo = 0, hi = 95;
+  for (let i = 0; i < 30; i++) { const mid = (lo + hi) / 2; if (calc(t, mid).profit > 0) lo = mid; else hi = mid; }
+  return lo;
+}
+
+
+// ---------- Отрисовка ----------
+function daysLeft(deadline) {
+  if (!deadline) return null;
+  const d = new Date(deadline.endsWith('Z') ? deadline : deadline + 'Z');
+  return (d - Date.now()) / 86400000;
+}
+function fmtDate(s) {
+  if (!s) return '—';
+  const d = new Date(s.endsWith('Z') ? s : s + 'Z');
+  return d.toLocaleString('ru-RU', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+}
+const short = n => n >= 1e6 ? (n / 1e6).toLocaleString('ru-RU', { maximumFractionDigits: 1 }) + ' млн ₽' : rub(n);
+// Большие стройки «под ключ»: проектирование, подстанции, СМР — расчёт по метражу для них условный
+const COMPLEX = /(ПИР|СМР|ПНР|проектн|изыскательск|КТП|БКТП|реконструкц|капитальн\S* ремонт\S* (?!кабел))/i;
+const tone = c =>c.profit <= 0 ? 'bad' : c.margin < 20 ? 'mid' : 'good';
+
+function readFilters() {
+  return { q: $('fQ').value.trim().toLowerCase(), region: $('fRegion').value, km: +$('fKm').value || 0,
+           law: $('fLaw').value, min: +$('fMin').value || 0, max: +$('fMax').value || 0,
+           sort: $('fSort').value, profit: $('fProfit').checked };
+}
+function markQuick(f) {
+  const key = f.region ? f.region : f.km ? String(f.km) : 'all';
+  document.querySelectorAll('#quick .pill').forEach(b => b.classList.toggle('on', b.dataset.q === key));
+}
+function render() {
+  const f = readFilters();
+  LS.set('gnb-filters', f);
+  markQuick(f);
+  const all = DATA.tenders.map(t => ({ t, c: calc(t), left: daysLeft(t.deadline) })).filter(r => r.left == null || r.left >= 0);
+  const rows = all.filter(({ t, c }) => {
+    if (f.law && t.law !== f.law) return false;
+    if (f.region && String(c.region) !== f.region) return false;
+    if (f.km && (c.lineKm == null || c.roadKm > f.km)) return false;
+    if (f.min && t.price < f.min) return false;
+    if (f.max && t.price > f.max) return false;
+    if (f.profit && c.profit <= 0) return false;
+    if (f.q && !(t.title + ' ' + (t.customer || '') + ' ' + (t.address || '') + ' ' + (REGIONS[c.region] || [''])[0]).toLowerCase().includes(f.q)) return false;
+    return true;
+  });
+  const sorters = {
+    deadline: (a, b) => (a.left ?? 1e9) - (b.left ?? 1e9), profit: (a, b) => b.c.profit - a.c.profit,
+    margin: (a, b) => b.c.margin - a.c.margin, price: (a, b) => b.t.price - a.t.price,
+    km: (a, b) => (a.c.lineKm ?? 1e9) - (b.c.lineKm ?? 1e9), new: (a, b) => String(b.t.published).localeCompare(String(a.t.published))
+  };
+  rows.sort(sorters[f.sort] || sorters.deadline);
+
+  const good = rows.filter(r => r.c.profit > 0);
+  const best = good.filter(r => !COMPLEX.test(r.t.title)).sort((a, b) => b.c.profit - a.c.profit)[0];
+  const near = rows.filter(r => r.c.lineKm != null && r.c.roadKm <= 500).length;
+  $('kpis').innerHTML = `
+    <div class="kpi"><span>Подходят под фильтр</span><b>${rows.length}</b><small>из ${all.length} актуальных</small></div>
+    <div class="kpi"><span>Прибыльные</span><b class="good">${good.length}</b><small>по вашим расценкам</small></div>
+    <div class="kpi"><span>Самый выгодный</span><b class="good">${best ? short(best.c.profit) : '—'}</b><small>${best ? esc((REGIONS[best.c.region] || ['?'])[0]) : 'нет'}</small></div>
+    <div class="kpi"><span>Рядом, до 500 км</span><b>${near}</b><small>среди показанных</small></div>`;
+  $('count').textContent = rows.length ? `Найдено закупок: ${rows.length}` : '';
+  $('list').innerHTML = rows.length ? rows.map(cardHtml).join('') :
+    '<div class="empty"><b>Под выбранные фильтры ничего нет</b><br>Попробуйте «Вся Россия» или уменьшите минимальную цену.</div>';
+}
+
+function cardHtml({ t, c, left }) {
+  const tn = tone(c);
+  const be = breakEven(t);
+  const reg = REGIONS[c.region] ? REGIONS[c.region][0] : (t.regionText || 'Регион не указан');
+  const o = OV[t.id] || {};
+  let deadlineTag = '';
+  if (left != null) {
+    if (left < 1) deadlineTag = `<span class="tag hot">🔥 осталось ${Math.max(1, Math.round(left * 24))} ч</span>`;
+    else if (left < 3) deadlineTag = `<span class="tag hot">осталось ${Math.floor(left)} дн.</span>`;
+    else if (left < 7) deadlineTag = `<span class="tag soon">осталось ${Math.floor(left)} дн.</span>`;
+    else deadlineTag = `<span class="tag">осталось ${Math.floor(left)} дн.</span>`;
+  }
+  const spend = c.cost + c.appCost + c.contrCost + c.etp;
+  const taxes = c.tax + c.vat;
+  const pct = x => Math.max(0, Math.min(100, x / Math.max(1, c.rev) * 100)).toFixed(1);
+  const bar = c.profit > 0
+    ? `<i class="c" style="width:${pct(spend)}%"></i><i class="t" style="width:${pct(taxes)}%"></i><i class="p" style="width:${pct(c.profit)}%"></i>`
+    : `<i class="c" style="width:${pct(c.rev + c.profit)}%"></i><i class="l" style="width:${pct(-c.profit)}%"></i>`;
+  const docs = arr(t.docs).filter(d => d.url).slice(0, 10)
+    .map(d => `<a href="${esc(d.url)}" target="_blank" rel="noopener">📄 ${esc(d.name)}</a>`).join('');
+  const line = (name, v, cls = '') => `<tr class="${cls}"><td>${name}</td><td>${v}</td></tr>`;
+  const minus = v => v ? '− ' + rub(v) : '0 ₽';
+
+  return `<article class="card ${tn}" data-id="${esc(t.id)}">
+    <div class="card-main">
+      <div>
+        <div class="tags">
+          <span class="tag law">${esc(t.law)}</span>
+          ${t.method ? `<span class="tag">${esc(t.method)}</span>` : ''}
+          ${deadlineTag}
+          ${c.est ? '<span class="tag soon">метраж оценочный</span>' : ''}
+          ${COMPLEX.test(t.title) ? '<span class="tag soon">комплексный подряд — ГНБ лишь часть работ</span>' : ''}
+        </div>
+        <h2><a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.title)}</a></h2>
+        <div class="meta">
+          <span>📍 ${esc(reg)}${c.lineKm != null ? ` · ~${Math.round(c.roadKm).toLocaleString('ru-RU')} км от Оренбурга` : ''}</span>
+          <span>⏰ заявки до ${fmtDate(t.deadline)}</span>
+          ${t.customer ? `<span>🏛 ${esc(t.customer)}</span>` : ''}
+        </div>
+        <div class="money">
+          <div>Начальная цена<b>${rub(t.price)}</b></div>
+          <div>Цена после торгов, −${c.discount}%<b>${rub(c.rev)}</b></div>
+          <div>Работа ${c.est ? '≈' : ''}${c.meters.toLocaleString('ru-RU')} м<b>${c.dia ? 'Ø ' + c.dia + ' мм' : { S: 'до 63 мм', M: '63–160 мм', L: 'свыше 160 мм' }[c.cls]}</b></div>
+        </div>
+        <div class="bar">${bar}</div>
+        <div class="legend"><span><i style="background:var(--cost)"></i>расходы ${rub(spend)}</span><span><i style="background:var(--tax)"></i>налоги ${rub(taxes)}</span>
+          <span><i style="background:${c.profit > 0 ? 'var(--good)' : 'var(--bad)'}"></i>${c.profit > 0 ? 'прибыль' : 'убыток'} ${rub(Math.abs(c.profit))}</span></div>
+      </div>
+      <div class="verdict ${tn}">
+        <div class="lbl">${c.profit > 0 ? 'Ваша прибыль' : 'Убыток'}</div>
+        <div class="profit">${rub(c.profit)}</div>
+        <div class="margin">${c.profit > 0 ? 'маржа' : ''} ${c.margin.toFixed(0)}%</div>
+        <div class="be">${be == null ? 'Невыгодно даже без снижения цены' : `Можно снижать цену<br>до <b>${be.toFixed(0)}%</b> и остаться в плюсе`}</div>
+      </div>
+    </div>
+    <div class="tune">
+      <label>Метраж, м ${c.est ? '<span class="est">— уточните</span>' : ''}
+        <input type="number" min="0" data-k="meters" value="${o.meters ?? (c.est ? '' : c.meters)}" placeholder="≈ ${c.meters}"></label>
+      <label>Диаметр трубы
+        <select data-k="cls">${[['S', 'до 63 мм'], ['M', '63–160 мм'], ['L', 'свыше 160 мм']]
+          .map(([v, n]) => `<option value="${v}" ${c.cls === v ? 'selected' : ''}>${n}</option>`).join('')}</select></label>
+      <label>Котлованов, шт<input type="number" min="0" data-k="pits" value="${o.pits ?? ''}" placeholder="${S.pitsPerJob}"></label>
+      <label>Снижение на торгах, %<input type="number" min="0" max="95" step="1" data-k="discount" value="${o.discount ?? ''}" placeholder="${S.discount}"></label>
+    </div>
+    <details>
+      <summary>Подробный расчёт, адрес и документы</summary>
+      <div class="more">
+        <table>
+          ${line('Получим по контракту', rub(c.rev), 'plus')}
+          ${line(`Бригада: ${c.meters} м`, minus(c.crew))}
+          ${line('Труба', minus(c.pipe))}
+          ${line('Котлованы, колодцы', minus(c.pits))}
+          ${line(`Выезд и дорога ~${Math.round(c.roadKm)} км туда-обратно`, minus(c.travel))}
+          ${line(c.living ? `Жильё и суточные, ${c.days} дн.` : 'Жильё и суточные — не нужны', minus(c.living))}
+          ${line('Исполнительная документация', minus(c.docs))}
+          ${line(`Непредвиденные, ${S.otherPct}%`, minus(c.other))}
+          ${line(`Обеспечение заявки ${rub(c.appG)} — цена денег`, minus(c.appCost))}
+          ${line(`Обеспечение контракта ${rub(c.contrG)} — банковская гарантия`, minus(c.contrCost))}
+          ${line('Плата электронной площадке', minus(c.etp))}
+          ${S.vatPct ? line(`НДС ${S.vatPct}%`, minus(c.vat)) : ''}
+          ${line(`Налог УСН ${S.taxPct}%`, minus(c.tax))}
+          ${line(c.profit > 0 ? 'Чистая прибыль' : 'Убыток', rub(c.profit), 'total')}
+        </table>
+        <div class="info">
+          <h4>Закупка</h4>
+          <p>№ ${esc(t.number)} · <a href="${esc(t.url)}" target="_blank" rel="noopener">открыть на zakupki.gov.ru ↗</a></p>
+          ${t.address ? `<p>📍 ${esc(t.address)}</p>` : ''}
+          ${t.termDays ? `<p>🗓 Срок работ: ~${t.termDays} дней</p>` : ''}
+          ${t.platform ? `<p>💻 Площадка: ${esc(t.platform)}</p>` : ''}
+          ${docs ? `<h4>Документы (смета, ТЗ)</h4><div class="docs">${docs}</div>` : ''}
+          <p class="hint">Ссылки ведут на zakupki.gov.ru — с зарубежным VPN сайт может не открыться.</p>
+        </div>
+      </div>
+    </details>
+  </article>`;
+}
+
+// Правки по конкретной закупке
+document.addEventListener('change', e => {
+  const k = e.target.dataset && e.target.dataset.k;
+  const card = e.target.closest('.card');
+  if (!k || !card) return;
+  const id = card.dataset.id;
+  const o = OV[id] || (OV[id] = {});
+  if (e.target.value === '') delete o[k]; else o[k] = k === 'cls' ? e.target.value : +e.target.value;
+  LS.set('gnb-overrides', OV);
+  const open = card.querySelector('details').open;
+  const t = DATA.tenders.find(x => x.id === id);
+  card.outerHTML = cardHtml({ t, c: calc(t), left: daysLeft(t.deadline) });
+  if (open) document.querySelector(`.card[data-id="${CSS.escape(id)}"] details`).open = true;
+});
+
+// ---------- Настройки ----------
+const SEC_ICONS = ['👷', '🧪', '🚚', '⛏', '📑', '🧾', '📏'];
+function buildSettings() {
+  $('settingsBody').innerHTML = '<p class="note">Цифры по умолчанию — примерные. Впишите свои — прибыль по всем тендерам пересчитается автоматически. Настройки хранятся только в этом браузере.</p>' +
+    SETTINGS_FORM.map(([title, items], i) => `<div class="sec"><h4>${SEC_ICONS[i] || ''} ${title}</h4>` +
+      items.map(([k, label, unit]) => `<div class="set"><span>${label}</span>
+        <div class="unit"><input type="number" step="any" data-s="${k}" value="${S[k]}"><em>${unit}</em></div></div>`).join('') + '</div>').join('') +
+    '<p style="margin-top:18px"><button class="btn btn-ghost" id="resetSettings">Вернуть значения по умолчанию</button></p>';
+}
+$('settingsBody').addEventListener('input', e => {
+  const k = e.target.dataset.s;
+  if (!k) return;
+  const v = parseFloat(e.target.value);
+  S[k] = isNaN(v) ? DEFAULTS[k] : v;
+  LS.set('gnb-settings', S);
+});
+$('settingsBody').addEventListener('click', e => {
+  if (e.target.id !== 'resetSettings') return;
+  S = Object.assign({}, DEFAULTS); LS.set('gnb-settings', {}); buildSettings(); render();
+});
+$('openSettings').onclick = () => { buildSettings(); $('dlg').showModal(); };
+$('closeSettings').onclick = () => $('dlg').close();
+$('dlg').addEventListener('close', render);
+
+// ---------- Старт ----------
+function initFilters() {
+  const f = LS.get('gnb-filters', { min: 300000, sort: 'deadline' });
+  $('fQ').value = f.q || ''; $('fKm').value = f.km || ''; $('fLaw').value = f.law || '';
+  $('fMin').value = f.min ?? 300000; $('fMax').value = f.max || ''; $('fSort').value = f.sort || 'deadline';
+  $('fProfit').checked = !!f.profit;
+  const used = [...new Set(DATA.tenders.map(regionOf))].filter(c => REGIONS[c])
+    .sort((a, b) => kmFromHome(a) - kmFromHome(b));
+  if (!used.includes(56)) used.unshift(56);
+  $('fRegion').innerHTML = '<option value="">Вся Россия</option>' +
+    used.map(c => `<option value="${c}">${REGIONS[c][0]}</option>`).join('');
+  $('fRegion').value = used.includes(+f.region) ? f.region : '';
+  ['fQ', 'fRegion', 'fLaw', 'fMin', 'fMax', 'fSort', 'fProfit'].forEach(id => $(id).addEventListener('input', render));
+  $('fRegion').addEventListener('input', () => { $('fKm').value = ''; render(); });
+  $('quick').addEventListener('click', e => {
+    const q = e.target.dataset && e.target.dataset.q;
+    if (!q) return;
+    $('fRegion').value = q === '56' ? '56' : '';
+    $('fKm').value = q === '500' || q === '1000' ? q : '';
+    render();
+  });
+}
+fetch('data/tenders.json?' + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    DATA = d;
+    DATA.tenders = arr(d.tenders);
+    $('updated').textContent = `Обновлено ${new Date(d.updated).toLocaleString('ru-RU', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' })} · 44-ФЗ и 223-ФЗ · вся Россия`;
+    initFilters(); render();
+  })
+  .catch(() => { $('updated').textContent = 'Не удалось загрузить список тендеров'; });
+</script>
+</body>
+</html>

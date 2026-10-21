@@ -1,0 +1,36 @@
+# Каждые 2 часа GitHub сам запускает сборщик тендеров и сохраняет свежий список.
+# Запустить вручную: вкладка Actions → «Обновить тендеры» → Run workflow.
+name: Обновить тендеры
+
+on:
+  schedule:
+    - cron: '17 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-tenders
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Собрать тендеры
+        shell: pwsh
+        env:
+          GOSPLAN_API_KEY: ${{ secrets.GOSPLAN_API_KEY }}
+        run: ./fetch.ps1
+
+      - name: Сохранить, если список изменился
+        run: |
+          git config user.name "tenders-bot"
+          git config user.email "tenders-bot@users.noreply.github.com"
+          git add data/tenders.json
+          git diff --cached --quiet || git commit -m "Обновление тендеров $(date -u +'%Y-%m-%d %H:%M')"
+          git push
