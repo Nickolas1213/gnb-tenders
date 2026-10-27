@@ -1,54 +1,54 @@
 {
-  "updated": "2026-10-27T04:52:10Z",
+  "updated": "2026-10-27T07:03:44Z",
   "source": "ГосПлан API (данные ЕИС zakupki.gov.ru), 44-ФЗ и 223-ФЗ, этап подачи заявок",
   "tenders": [
     {
-      "id": "fz223-32616389115",
+      "id": "fz223-32616365288",
       "law": "223-ФЗ",
-      "number": "32616389115",
-      "title": "прокладка трубопровода ПНД методом ГНБ п.Салым",
-      "price": 498600.0,
+      "number": "32616365288",
+      "title": "Прокол с протяжкой трубы ",
+      "price": 140000.0,
       "currency": "RUB",
-      "region": 86,
-      "published": "2026-09-18T09:56:21",
+      "region": 39,
+      "published": "2026-09-09T16:30:19",
       "deadline": null,
-      "okpd2": "42.21.22.110",
+      "okpd2": "43.12.11.160",
       "contractGuaranteePart": null,
       "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616389115",
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616365288",
       "detailsLoaded": true,
-      "customer": "ПОЙКОВСКОЕ МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ \"УПРАВЛЕНИЕ ТЕПЛОВОДОСНАБЖЕНИЯ\"",
-      "regionText": "ХАНТЫ-МАНСИЙСКИЙ АВТОНОМНЫЙ ОКРУГ - ЮГРА",
-      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
+      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ \"ГВАРДЕЙСКИЙ МУНИЦИПАЛЬНЫЙ ОКРУГ КАЛИНИНГРАДСКОЙ ОБЛАСТИ\" \"КОМСЕРВИС\"",
+      "regionText": "КАЛИНИНГРАДСКАЯ ОБЛАСТЬ",
+      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (до 01.07.18)",
       "docs": [
         {
-          "name": "Извещение для ЕП ПМУП УТВС.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=C32689921C164D198A1E260669BBC914"
+          "name": "Договор ИП Панин 09 09 26.doc",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=172D3D275BE5428082526565A41CECD9"
         }
       ]
     },
     {
-      "id": "fz223-32616246888",
+      "id": "fz223-32616423057",
       "law": "223-ФЗ",
-      "number": "32616246888",
-      "title": "Выполнение работ по горизонтально-направленному бурению ",
-      "price": 412000.0,
+      "number": "32616423057",
+      "title": "Бестраншейная прокладка трубопровода из полипропиленовых труб Д 110 мм методом разрушения в СНТ «Энергия»",
+      "price": 102500.0,
       "currency": "RUB",
-      "region": 22,
-      "published": "2026-07-29T15:58:16",
+      "region": 61,
+      "published": "2026-09-30T11:31:40",
       "deadline": null,
-      "okpd2": "43.12",
+      "okpd2": "43.22.11.190",
       "contractGuaranteePart": null,
       "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616246888",
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616423057",
       "detailsLoaded": true,
-      "customer": "МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ \"БАРНАУЛГОРСВЕТ\" Г.БАРНАУЛА",
-      "regionText": "АЛТАЙСКИЙ КРАЙ",
-      "method": "Закупка у единственного поставщика",
+      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ  ПРЕДПРИЯТИЕ ЗЕРНОГРАДСКОГО ГОРОДСКОГО  ПОСЕЛЕНИЯ \"ЗЕРНОГРАДСКОЕ ПРОИЗВОДСТВЕННОЕ  ПРЕДПРИЯТИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА\"",
+      "regionText": "РОСТОВСКАЯ ОБЛАСТЬ",
+      "method": "Закупка у единственного поставщика в бумажной форме(10.2023)",
       "docs": [
         {
-          "name": "ЕП_Извещение+Документация.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=2EB20056739A49758669727BF7F5866C"
+          "name": "Обоснование  закупки у  единственного поставщика (1).docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=C036A0127C3D411A9037F3E227CAE6F4"
         }
       ]
     },
@@ -90,35 +90,6 @@
       ]
     },
     {
-      "id": "fz223-32616374279",
-      "law": "223-ФЗ",
-      "number": "32616374279",
-      "title": "Устройство горизонтально направленного прокола (ГНБ) ПЭТ Ø63мм на объекте: «Капитальный ремонт (восстановление) сетей водоснабжения, расположенных на пер. Героев, пгт Славяносербск, Славяносербского муниципального округа, Луганской Народной Республики» ",
-      "price": 1431000.0,
-      "currency": "RUB",
-      "region": 22,
-      "published": "2026-09-14T12:47:28",
-      "deadline": null,
-      "okpd2": "43.99",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616374279",
-      "detailsLoaded": true,
-      "customer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"АЛТАЙВОДСЕРВИС\"",
-      "regionText": "АЛТАЙСКИЙ КРАЙ",
-      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (до 01.07.18)",
-      "docs": [
-        {
-          "name": "Проект.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=DBCE7F55546242658D10C06F22DB7B72"
-        },
-        {
-          "name": "документация .doc",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=E39975F2435E46619FC3798E2723444A"
-        }
-      ]
-    },
-    {
       "id": "fz223-32616392462",
       "law": "223-ФЗ",
       "number": "32616392462",
@@ -140,64 +111,6 @@
         {
           "name": "Извещение.doc",
           "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=236970B15073430D8967F5CC3FF88B63"
-        }
-      ]
-    },
-    {
-      "id": "fz223-32616373762",
-      "law": "223-ФЗ",
-      "number": "32616373762",
-      "title": "Устройство горизонтально направленного прокола (ГНБ) ПЭТ Ø160мм на объекте: «Капитальный ремонт (восстановление) сетей водоснабжения, расположенных на ул. Победы, ул. Советов, г. Зимогорье, Славяносербского муниципального округа, Луганской Народной Республики» ",
-      "price": 1280000.0,
-      "currency": "RUB",
-      "region": 22,
-      "published": "2026-09-14T10:24:48",
-      "deadline": null,
-      "okpd2": "43.99",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616373762",
-      "detailsLoaded": true,
-      "customer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"АЛТАЙВОДСЕРВИС\"",
-      "regionText": "АЛТАЙСКИЙ КРАЙ",
-      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (до 01.07.18)",
-      "docs": [
-        {
-          "name": "документация .doc",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=2DA301EA449446F499B6FEF8695C0A6D"
-        },
-        {
-          "name": "Проект.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=09413B9F692548AB80E33FACF6AF7A2A"
-        }
-      ]
-    },
-    {
-      "id": "fz223-32616490935",
-      "law": "223-ФЗ",
-      "number": "32616490935",
-      "title": "Выполнение работ по бестраншейной прокладке  полиэтиленовых труб Д=315 методом ГНБ общей протяженностью 128м на объекте «Саратовская обл, г.Энгельс, сооружение канализационных сетей от потребителей ж/домов по пр.Строителей, ул.Полтавская, ул.М.Расковой, ул.Менделеева, ул.Весенняя, ул.Космонавтов, ул.Молодежной до КНС-19, КНС-20»",
-      "price": 777000.0,
-      "currency": "RUB",
-      "region": 64,
-      "published": "2026-10-21T10:05:12",
-      "deadline": null,
-      "okpd2": "43.12.11.160",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616490935",
-      "detailsLoaded": true,
-      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ \"ЭНГЕЛЬС-ВОДОКАНАЛ ЭНГЕЛЬССКОГО МУНИЦИПАЛЬНОГО РАЙОНА САРАТОВСКОЙ ОБЛАСТИ\"",
-      "regionText": "САРАТОВСКАЯ ОБЛАСТЬ",
-      "method": "закупки у единственного поставщика (подрядчика, исполнителя)",
-      "docs": [
-        {
-          "name": "Проект договора.doc",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=661EE4DE64E94D21AC65E89C6DDCFCF5"
-        },
-        {
-          "name": "Извещение.pdf",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=0C112EDC1A8B49009B6A2318C8F27217"
         }
       ]
     },
@@ -227,114 +140,6 @@
         {
           "name": "документация .doc",
           "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=4211C94DC790422DAACFE270F0C5D330"
-        }
-      ]
-    },
-    {
-      "id": "fz223-32616288297",
-      "law": "223-ФЗ",
-      "number": "32616288297",
-      "title": "Выполнение работ по устройство перехода методом горизонтально-направленного бурения (ГНБ) через автомобильную дорогу с затяжкой 1 трубы ПЭ 100 SDR 11 - 63 х 5,8",
-      "price": 99900.0,
-      "currency": "RUB",
-      "region": 23,
-      "published": "2026-08-13T09:51:58",
-      "deadline": null,
-      "okpd2": "43.12.11.160",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616288297",
-      "detailsLoaded": true,
-      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ \"ВЫСЕЛКОВСКИЕ КОММУНАЛЬНЫЕ СИСТЕМЫ\" ВЫСЕЛКОВСКОГО СЕЛЬСКОГО ПОСЕЛЕНИЯ ВЫСЕЛКОВСКОГО РАЙОНА",
-      "regionText": "КРАСНОДАРСКИЙ КРАЙ",
-      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (согласно п. 63.1 гл. 63 Положения о закупке товаров, работ, услуг Заказчика)",
-      "docs": [
-        {
-          "name": "документация.pdf",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=EC11B0BF474C4AF285A522AE0620203D"
-        },
-        {
-          "name": "приложение № 1НМЦД.pdf",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=A3C2F1B2357D4F398D314A2BCFC59C42"
-        },
-        {
-          "name": "приложение № 2 проект договора.doc",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=3C806718E7F64D86851F3F4F606A7E94"
-        }
-      ]
-    },
-    {
-      "id": "fz223-32616423057",
-      "law": "223-ФЗ",
-      "number": "32616423057",
-      "title": "Бестраншейная прокладка трубопровода из полипропиленовых труб Д 110 мм методом разрушения в СНТ «Энергия»",
-      "price": 102500.0,
-      "currency": "RUB",
-      "region": 61,
-      "published": "2026-09-30T11:31:40",
-      "deadline": null,
-      "okpd2": "43.22.11.190",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616423057",
-      "detailsLoaded": true,
-      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ  ПРЕДПРИЯТИЕ ЗЕРНОГРАДСКОГО ГОРОДСКОГО  ПОСЕЛЕНИЯ \"ЗЕРНОГРАДСКОЕ ПРОИЗВОДСТВЕННОЕ  ПРЕДПРИЯТИЕ ЖИЛИЩНО-КОММУНАЛЬНОГО ХОЗЯЙСТВА\"",
-      "regionText": "РОСТОВСКАЯ ОБЛАСТЬ",
-      "method": "Закупка у единственного поставщика в бумажной форме(10.2023)",
-      "docs": [
-        {
-          "name": "Обоснование  закупки у  единственного поставщика (1).docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=C036A0127C3D411A9037F3E227CAE6F4"
-        }
-      ]
-    },
-    {
-      "id": "fz223-32616403573",
-      "law": "223-ФЗ",
-      "number": "32616403573",
-      "title": "Выполнение работ по горизонтально-направленному бурению трубопровода для подключения к централизованной системе водоотведения по объекту: \"Производственная база по адресу: Калининградская область, г. Калининград, п. Прегольский, д.12а\"",
-      "price": 799784.0,
-      "currency": "RUB",
-      "region": 39,
-      "published": "2026-09-23T16:29:22",
-      "deadline": null,
-      "okpd2": "43.12.11.160",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616403573",
-      "detailsLoaded": true,
-      "customer": "ГОСУДАРСТВЕННОЕ ПРЕДПРИЯТИЕ КАЛИНИНГРАДСКОЙ ОБЛАСТИ \"ВОДОКАНАЛ\"",
-      "regionText": "КАЛИНИНГРАДСКАЯ ОБЛАСТЬ",
-      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
-      "docs": [
-        {
-          "name": "извещение.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=FD574863A95746BF8B9F4C7981C51284"
-        }
-      ]
-    },
-    {
-      "id": "fz223-32616275685",
-      "law": "223-ФЗ",
-      "number": "32616275685",
-      "title": "Выполнение работ по горизонтально-направленному бурению трубопровода для подключения к централизованной системе холодного водоснабжения по объекту: «Производственная база по адресу: Калининградская область, г. Калининград, п. Прегольский, д. 12а»",
-      "price": 797278.47,
-      "currency": "RUB",
-      "region": 39,
-      "published": "2026-08-07T14:11:33",
-      "deadline": null,
-      "okpd2": "43.12.11.160",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616275685",
-      "detailsLoaded": true,
-      "customer": "ГОСУДАРСТВЕННОЕ ПРЕДПРИЯТИЕ КАЛИНИНГРАДСКОЙ ОБЛАСТИ \"ВОДОКАНАЛ\"",
-      "regionText": "КАЛИНИНГРАДСКАЯ ОБЛАСТЬ",
-      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
-      "docs": [
-        {
-          "name": "извещение.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=5860F6F448D84FD6BDE0CC343AF93EA1"
         }
       ]
     },
@@ -372,52 +177,143 @@
       ]
     },
     {
-      "id": "fz223-32616256551",
+      "id": "fz223-32616374279",
       "law": "223-ФЗ",
-      "number": "32616256551",
-      "title": "Выполнение работ горизонтально направленному бурению по адресу автодорога «Подъезд к аэропорту» (остановка «Развязка на Аэропорт»)",
-      "price": 188796.07,
+      "number": "32616374279",
+      "title": "Устройство горизонтально направленного прокола (ГНБ) ПЭТ Ø63мм на объекте: «Капитальный ремонт (восстановление) сетей водоснабжения, расположенных на пер. Героев, пгт Славяносербск, Славяносербского муниципального округа, Луганской Народной Республики» ",
+      "price": 1431000.0,
       "currency": "RUB",
-      "region": 2,
-      "published": "2026-07-31T16:17:53",
+      "region": 22,
+      "published": "2026-09-14T12:47:28",
       "deadline": null,
-      "okpd2": "43.12.11.160",
+      "okpd2": "43.99",
       "contractGuaranteePart": null,
       "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616256551",
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616374279",
       "detailsLoaded": true,
-      "customer": "МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ \"УФАГОРСВЕТ\" ГОРОДСКОГО ОКРУГА ГОРОД УФА РЕСПУБЛИКИ БАШКОРТОСТАН",
-      "regionText": "РЕСПУБЛИКА БАШКОРТОСТАН",
-      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
+      "customer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"АЛТАЙВОДСЕРВИС\"",
+      "regionText": "АЛТАЙСКИЙ КРАЙ",
+      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (до 01.07.18)",
       "docs": [
         {
-          "name": "Выполнение работ.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=684E971F3BD942C5AB5925B79F975133"
+          "name": "Проект.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=DBCE7F55546242658D10C06F22DB7B72"
+        },
+        {
+          "name": "документация .doc",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=E39975F2435E46619FC3798E2723444A"
         }
       ]
     },
     {
-      "id": "fz223-32616365288",
+      "id": "fz223-32616403573",
       "law": "223-ФЗ",
-      "number": "32616365288",
-      "title": "Прокол с протяжкой трубы ",
-      "price": 140000.0,
+      "number": "32616403573",
+      "title": "Выполнение работ по горизонтально-направленному бурению трубопровода для подключения к централизованной системе водоотведения по объекту: \"Производственная база по адресу: Калининградская область, г. Калининград, п. Прегольский, д.12а\"",
+      "price": 799784.0,
       "currency": "RUB",
       "region": 39,
-      "published": "2026-09-09T16:30:19",
+      "published": "2026-09-23T16:29:22",
       "deadline": null,
       "okpd2": "43.12.11.160",
       "contractGuaranteePart": null,
       "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616365288",
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616403573",
       "detailsLoaded": true,
-      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ МУНИЦИПАЛЬНОГО ОБРАЗОВАНИЯ \"ГВАРДЕЙСКИЙ МУНИЦИПАЛЬНЫЙ ОКРУГ КАЛИНИНГРАДСКОЙ ОБЛАСТИ\" \"КОМСЕРВИС\"",
+      "customer": "ГОСУДАРСТВЕННОЕ ПРЕДПРИЯТИЕ КАЛИНИНГРАДСКОЙ ОБЛАСТИ \"ВОДОКАНАЛ\"",
       "regionText": "КАЛИНИНГРАДСКАЯ ОБЛАСТЬ",
-      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (до 01.07.18)",
+      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
       "docs": [
         {
-          "name": "Договор ИП Панин 09 09 26.doc",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=172D3D275BE5428082526565A41CECD9"
+          "name": "извещение.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=FD574863A95746BF8B9F4C7981C51284"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616288297",
+      "law": "223-ФЗ",
+      "number": "32616288297",
+      "title": "Выполнение работ по устройство перехода методом горизонтально-направленного бурения (ГНБ) через автомобильную дорогу с затяжкой 1 трубы ПЭ 100 SDR 11 - 63 х 5,8",
+      "price": 99900.0,
+      "currency": "RUB",
+      "region": 23,
+      "published": "2026-08-13T09:51:58",
+      "deadline": null,
+      "okpd2": "43.12.11.160",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616288297",
+      "detailsLoaded": true,
+      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ \"ВЫСЕЛКОВСКИЕ КОММУНАЛЬНЫЕ СИСТЕМЫ\" ВЫСЕЛКОВСКОГО СЕЛЬСКОГО ПОСЕЛЕНИЯ ВЫСЕЛКОВСКОГО РАЙОНА",
+      "regionText": "КРАСНОДАРСКИЙ КРАЙ",
+      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (согласно п. 63.1 гл. 63 Положения о закупке товаров, работ, услуг Заказчика)",
+      "docs": [
+        {
+          "name": "документация.pdf",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=EC11B0BF474C4AF285A522AE0620203D"
+        },
+        {
+          "name": "приложение № 1НМЦД.pdf",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=A3C2F1B2357D4F398D314A2BCFC59C42"
+        },
+        {
+          "name": "приложение № 2 проект договора.doc",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=3C806718E7F64D86851F3F4F606A7E94"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616389115",
+      "law": "223-ФЗ",
+      "number": "32616389115",
+      "title": "прокладка трубопровода ПНД методом ГНБ п.Салым",
+      "price": 498600.0,
+      "currency": "RUB",
+      "region": 86,
+      "published": "2026-09-18T09:56:21",
+      "deadline": null,
+      "okpd2": "42.21.22.110",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616389115",
+      "detailsLoaded": true,
+      "customer": "ПОЙКОВСКОЕ МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ \"УПРАВЛЕНИЕ ТЕПЛОВОДОСНАБЖЕНИЯ\"",
+      "regionText": "ХАНТЫ-МАНСИЙСКИЙ АВТОНОМНЫЙ ОКРУГ - ЮГРА",
+      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
+      "docs": [
+        {
+          "name": "Извещение для ЕП ПМУП УТВС.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=C32689921C164D198A1E260669BBC914"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616490935",
+      "law": "223-ФЗ",
+      "number": "32616490935",
+      "title": "Выполнение работ по бестраншейной прокладке  полиэтиленовых труб Д=315 методом ГНБ общей протяженностью 128м на объекте «Саратовская обл, г.Энгельс, сооружение канализационных сетей от потребителей ж/домов по пр.Строителей, ул.Полтавская, ул.М.Расковой, ул.Менделеева, ул.Весенняя, ул.Космонавтов, ул.Молодежной до КНС-19, КНС-20»",
+      "price": 777000.0,
+      "currency": "RUB",
+      "region": 64,
+      "published": "2026-10-21T10:05:12",
+      "deadline": null,
+      "okpd2": "43.12.11.160",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616490935",
+      "detailsLoaded": true,
+      "customer": "МУНИЦИПАЛЬНОЕ УНИТАРНОЕ ПРЕДПРИЯТИЕ \"ЭНГЕЛЬС-ВОДОКАНАЛ ЭНГЕЛЬССКОГО МУНИЦИПАЛЬНОГО РАЙОНА САРАТОВСКОЙ ОБЛАСТИ\"",
+      "regionText": "САРАТОВСКАЯ ОБЛАСТЬ",
+      "method": "закупки у единственного поставщика (подрядчика, исполнителя)",
+      "docs": [
+        {
+          "name": "Проект договора.doc",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=661EE4DE64E94D21AC65E89C6DDCFCF5"
+        },
+        {
+          "name": "Извещение.pdf",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=0C112EDC1A8B49009B6A2318C8F27217"
         }
       ]
     },
@@ -443,6 +339,110 @@
         {
           "name": "документация..docx",
           "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=CB8259E491D1483A845CC8312631210A"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616275685",
+      "law": "223-ФЗ",
+      "number": "32616275685",
+      "title": "Выполнение работ по горизонтально-направленному бурению трубопровода для подключения к централизованной системе холодного водоснабжения по объекту: «Производственная база по адресу: Калининградская область, г. Калининград, п. Прегольский, д. 12а»",
+      "price": 797278.47,
+      "currency": "RUB",
+      "region": 39,
+      "published": "2026-08-07T14:11:33",
+      "deadline": null,
+      "okpd2": "43.12.11.160",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616275685",
+      "detailsLoaded": true,
+      "customer": "ГОСУДАРСТВЕННОЕ ПРЕДПРИЯТИЕ КАЛИНИНГРАДСКОЙ ОБЛАСТИ \"ВОДОКАНАЛ\"",
+      "regionText": "КАЛИНИНГРАДСКАЯ ОБЛАСТЬ",
+      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
+      "docs": [
+        {
+          "name": "извещение.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=5860F6F448D84FD6BDE0CC343AF93EA1"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616256551",
+      "law": "223-ФЗ",
+      "number": "32616256551",
+      "title": "Выполнение работ горизонтально направленному бурению по адресу автодорога «Подъезд к аэропорту» (остановка «Развязка на Аэропорт»)",
+      "price": 188796.07,
+      "currency": "RUB",
+      "region": 2,
+      "published": "2026-07-31T16:17:53",
+      "deadline": null,
+      "okpd2": "43.12.11.160",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616256551",
+      "detailsLoaded": true,
+      "customer": "МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ \"УФАГОРСВЕТ\" ГОРОДСКОГО ОКРУГА ГОРОД УФА РЕСПУБЛИКИ БАШКОРТОСТАН",
+      "regionText": "РЕСПУБЛИКА БАШКОРТОСТАН",
+      "method": "Закупка у единственного поставщика (исполнителя, подрядчика)",
+      "docs": [
+        {
+          "name": "Выполнение работ.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=684E971F3BD942C5AB5925B79F975133"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616246888",
+      "law": "223-ФЗ",
+      "number": "32616246888",
+      "title": "Выполнение работ по горизонтально-направленному бурению ",
+      "price": 412000.0,
+      "currency": "RUB",
+      "region": 22,
+      "published": "2026-07-29T15:58:16",
+      "deadline": null,
+      "okpd2": "43.12",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616246888",
+      "detailsLoaded": true,
+      "customer": "МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ \"БАРНАУЛГОРСВЕТ\" Г.БАРНАУЛА",
+      "regionText": "АЛТАЙСКИЙ КРАЙ",
+      "method": "Закупка у единственного поставщика",
+      "docs": [
+        {
+          "name": "ЕП_Извещение+Документация.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=2EB20056739A49758669727BF7F5866C"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616373762",
+      "law": "223-ФЗ",
+      "number": "32616373762",
+      "title": "Устройство горизонтально направленного прокола (ГНБ) ПЭТ Ø160мм на объекте: «Капитальный ремонт (восстановление) сетей водоснабжения, расположенных на ул. Победы, ул. Советов, г. Зимогорье, Славяносербского муниципального округа, Луганской Народной Республики» ",
+      "price": 1280000.0,
+      "currency": "RUB",
+      "region": 22,
+      "published": "2026-09-14T10:24:48",
+      "deadline": null,
+      "okpd2": "43.99",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616373762",
+      "detailsLoaded": true,
+      "customer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"АЛТАЙВОДСЕРВИС\"",
+      "regionText": "АЛТАЙСКИЙ КРАЙ",
+      "method": "Закупка у единственного поставщика (подрядчика, исполнителя) (до 01.07.18)",
+      "docs": [
+        {
+          "name": "документация .doc",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=2DA301EA449446F499B6FEF8695C0A6D"
+        },
+        {
+          "name": "Проект.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=09413B9F692548AB80E33FACF6AF7A2A"
         }
       ]
     },
@@ -542,52 +542,6 @@
         {
           "name": "Приложение___2___Проект_договора.docx",
           "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=CCFBEEA29C954580873DA0F007F593D7"
-        }
-      ]
-    },
-    {
-      "id": "fz223-32616497376",
-      "law": "223-ФЗ",
-      "number": "32616497376",
-      "title": "Выполнение работ по устройству водопропускной трубы методом ГНБ на автомобильной дороге Сургут - Салехард, участок Объезд ст. Пуровск",
-      "price": 1442674.62,
-      "currency": "RUB",
-      "region": 72,
-      "published": "2026-10-22T15:29:44",
-      "deadline": "2026-10-23T15:30:00",
-      "okpd2": "42.11.20.300",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616497376",
-      "detailsLoaded": true,
-      "customer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"ЯМАЛАВТОДОР\"",
-      "regionText": "ЯМАЛО-НЕНЕЦКИЙ АВТОНОМНЫЙ ОКРУГ",
-      "method": "Электронный магазин",
-      "platform": "https://223.rts-tender.ru/supplier/auction/Trade/View.aspx?Id=4072431",
-      "docs": [
-        {
-          "name": "Извещение электронный магазин МСП.doc",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=89FF6D10D6F14D2EA33446DDB912175E"
-        },
-        {
-          "name": "Приложение 2. Обоснование НМЦД.xlsx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=9200E4656A434E5EAF9AED35A6CCF821"
-        },
-        {
-          "name": "Приложение 5. Проект договора.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=60C87F76C2B541C88BC8BC6424C5F0E0"
-        },
-        {
-          "name": "Приложение 4-4.1. Анкета Участника. Форма..docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=F33C1F496DE04648B91B4CB30E6401D1"
-        },
-        {
-          "name": "Приложение 3. Заявка на участие. Форма..docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=805D6E8F1E9C4D5E9AD44AFFC8B4F9B5"
-        },
-        {
-          "name": "Приложение 1. Техническое задание.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=7D5CCEF988724795B4D6CE1B237EC80D"
         }
       ]
     },
@@ -1015,32 +969,6 @@
       ]
     },
     {
-      "id": "fz223-32616507447",
-      "law": "223-ФЗ",
-      "number": "32616507447",
-      "title": "Выполнение ПИР по титулу: Строительство 4ЛЭП-0,4 кВ от секции 1 РУ-0,4 кВ ЗТП-257 до проект. РЩ-0,4 кВ №1 и №3, от секции 2 РУ-0,4 кВ ЗТП-257 до проект. РЩ-0,4 кВ №2 и №4, ПС №175 \"ЦАГИ\", ГНБ, 4РЩ-0,4 кВ, в т.ч. ПИР, МО, г.о. Жуковский, г. Жуковский, ул. Дзержинского, д. 14, к.н. 50:52:0010304:1681; 50:52:0010303:535 Ю8-26-303-300079(216596) для нужд филиала ПАО «Россети Московский регион» - Южные электрические сети",
-      "price": 4066789.65,
-      "currency": "RUB",
-      "region": 77,
-      "published": "2026-10-26T14:01:00",
-      "deadline": "2026-10-29T11:00:00",
-      "okpd2": "71.12.13.000",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616507447",
-      "detailsLoaded": true,
-      "customer": "ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО \"РОССЕТИ МОСКОВСКИЙ РЕГИОН\"",
-      "regionText": "Г.МОСКВА",
-      "method": "Запрос цен по результатам предварительного отбора",
-      "platform": "https://tender.lot-online.ru/app/OfferCard/page?OfferCard.offerUUID=Sgpmspc19718u80000q2tuh3uqiic5gi4",
-      "docs": [
-        {
-          "name": "082-0037528 ПИР.rar",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=53407BA127304D969D6ECBF990C7C2A0"
-        }
-      ]
-    },
-    {
       "id": "fz223-32616507687",
       "law": "223-ФЗ",
       "number": "32616507687",
@@ -1117,6 +1045,32 @@
         {
           "name": "Приложение №3 Обоснование цены.pdf",
           "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=22EEF87CC48C49FAA2F794AD4B74DB52"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616507447",
+      "law": "223-ФЗ",
+      "number": "32616507447",
+      "title": "Выполнение ПИР по титулу: Строительство 4ЛЭП-0,4 кВ от секции 1 РУ-0,4 кВ ЗТП-257 до проект. РЩ-0,4 кВ №1 и №3, от секции 2 РУ-0,4 кВ ЗТП-257 до проект. РЩ-0,4 кВ №2 и №4, ПС №175 \"ЦАГИ\", ГНБ, 4РЩ-0,4 кВ, в т.ч. ПИР, МО, г.о. Жуковский, г. Жуковский, ул. Дзержинского, д. 14, к.н. 50:52:0010304:1681; 50:52:0010303:535 Ю8-26-303-300079(216596) для нужд филиала ПАО «Россети Московский регион» - Южные электрические сети",
+      "price": 4066789.65,
+      "currency": "RUB",
+      "region": 77,
+      "published": "2026-10-26T14:01:00",
+      "deadline": "2026-10-29T11:00:00",
+      "okpd2": "71.12.13.000",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616507447",
+      "detailsLoaded": true,
+      "customer": "ПУБЛИЧНОЕ АКЦИОНЕРНОЕ ОБЩЕСТВО \"РОССЕТИ МОСКОВСКИЙ РЕГИОН\"",
+      "regionText": "Г.МОСКВА",
+      "method": "Запрос цен по результатам предварительного отбора",
+      "platform": "https://tender.lot-online.ru/app/OfferCard/page?OfferCard.offerUUID=Sgpmspc19718u80000q2tuh3uqiic5gi4",
+      "docs": [
+        {
+          "name": "082-0037528 ПИР.rar",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=53407BA127304D969D6ECBF990C7C2A0"
         }
       ]
     },
@@ -1346,48 +1300,6 @@
       ]
     },
     {
-      "id": "fz223-32616501664",
-      "law": "223-ФЗ",
-      "number": "32616501664",
-      "title": "Выполнение работ по устройству подземных переходов методом горизонтального прокола на объектах:  -«Реконструкция КЛ-0,4кВ от РТП 14Б до ВРУ-0,4кВ многоквартирного дома по ул. Комсомольская, 225»; -«Реконструкция КЛ-0,4кВ от РТП-2-127 до ВРУ-0,4кВ многоквартирного дома по ул. Имени Газета «Правда», 78». ",
-      "price": 394588.19,
-      "currency": "RUB",
-      "region": 74,
-      "published": "2026-10-23T13:37:27",
-      "deadline": "2026-11-02T08:00:00",
-      "okpd2": "43.12.11.190",
-      "contractGuaranteePart": null,
-      "contractGuaranteeAmount": null,
-      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616501664",
-      "detailsLoaded": true,
-      "customer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"ГОРЭЛЕКТРОСЕТЬ\"",
-      "regionText": "ЧЕЛЯБИНСКАЯ ОБЛАСТЬ",
-      "method": "Аукцион в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства",
-      "platform": "https://223.rts-tender.ru/supplier/auction/Trade/View.aspx?Id=4073473",
-      "docs": [
-        {
-          "name": "Извещение_Выполнение работ методом горизонтального прокола.docx",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=DE992FBB7FEB48F4B8584608E4CD52D1"
-        },
-        {
-          "name": "смета №20МПСК-529.22-2025-ЭС.pdf",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=902CCF9B8A9546E1BA5B33A6792EDAB6"
-        },
-        {
-          "name": "! Проект Правда 78 (30 л) - изм.2.pdf",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=BAA73A5D35964390B0ECA6A80E31A1A9"
-        },
-        {
-          "name": "смета №19МПСК-529.78-2025-ЭС.pdf",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=6E90650B3BE94606BFFACC7CCA253AED"
-        },
-        {
-          "name": "! Проект Комсомольская 22 (29 л) -изм.2.pdf",
-          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=EB59BADA5B374ADA8296973DC7274C1C"
-        }
-      ]
-    },
-    {
       "id": "fz223-32616475844",
       "law": "223-ФЗ",
       "number": "32616475844",
@@ -1462,6 +1374,48 @@
         {
           "name": "Техническое_задание_17256960-1.pdf",
           "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=6C433B2BE1894821B92EB1F1A937BCCD"
+        }
+      ]
+    },
+    {
+      "id": "fz223-32616501664",
+      "law": "223-ФЗ",
+      "number": "32616501664",
+      "title": "Выполнение работ по устройству подземных переходов методом горизонтального прокола на объектах:  -«Реконструкция КЛ-0,4кВ от РТП 14Б до ВРУ-0,4кВ многоквартирного дома по ул. Комсомольская, 225»; -«Реконструкция КЛ-0,4кВ от РТП-2-127 до ВРУ-0,4кВ многоквартирного дома по ул. Имени Газета «Правда», 78». ",
+      "price": 394588.19,
+      "currency": "RUB",
+      "region": 74,
+      "published": "2026-10-23T13:37:27",
+      "deadline": "2026-11-02T08:00:00",
+      "okpd2": "43.12.11.190",
+      "contractGuaranteePart": null,
+      "contractGuaranteeAmount": null,
+      "url": "https://zakupki.gov.ru/epz/order/extendedsearch/results.html?searchString=32616501664",
+      "detailsLoaded": true,
+      "customer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"ГОРЭЛЕКТРОСЕТЬ\"",
+      "regionText": "ЧЕЛЯБИНСКАЯ ОБЛАСТЬ",
+      "method": "Аукцион в электронной форме, участниками которого могут быть только субъекты малого и среднего предпринимательства",
+      "platform": "https://223.rts-tender.ru/supplier/auction/Trade/View.aspx?Id=4073473",
+      "docs": [
+        {
+          "name": "Извещение_Выполнение работ методом горизонтального прокола.docx",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=DE992FBB7FEB48F4B8584608E4CD52D1"
+        },
+        {
+          "name": "смета №20МПСК-529.22-2025-ЭС.pdf",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=902CCF9B8A9546E1BA5B33A6792EDAB6"
+        },
+        {
+          "name": "! Проект Правда 78 (30 л) - изм.2.pdf",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=BAA73A5D35964390B0ECA6A80E31A1A9"
+        },
+        {
+          "name": "смета №19МПСК-529.78-2025-ЭС.pdf",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=6E90650B3BE94606BFFACC7CCA253AED"
+        },
+        {
+          "name": "! Проект Комсомольская 22 (29 л) -изм.2.pdf",
+          "url": "https://zakupki.gov.ru/223/filestore/public/1.0/download/fz223/file.html?uid=EB59BADA5B374ADA8296973DC7274C1C"
         }
       ]
     },
